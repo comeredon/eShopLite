@@ -27,6 +27,9 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+// Add AntiForgery Middleware here
+app.UseAntiforgery();
+
 app.UseStaticFiles();
 
 app.MapRazorComponents<App>()
